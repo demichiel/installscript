@@ -7,7 +7,7 @@ then
 	echo 'Created .vimrc'
 fi
 
-sed -i 's/robbyrussell/fletcherm/g' ~/.zshrc
+sed -i 's/robbyrussell/agnoster/g' ~/.zshrc
 sed -i 's/\(git\)/git\ ubuntu/g' ~/.zshrc
 echo "Edited .zshrc"
 
