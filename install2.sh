@@ -17,5 +17,8 @@ sudo npm install -g tldr
 echo "set owner of .config"
 sudo chown -R $(whoami) ~/.config
 
+echo "update locate db"
+sudo updatedb
+
 echo "restart zsh"
 zsh
