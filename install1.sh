@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "Installing programs"
-sudo apt-get install zsh vim curl wget git unzip powerline-fonts
+sudo apt-get install -y zsh vim curl wget git unzip powerline-fonts mosh
 
 mkdir -p ~/.vim/autoload ~/.vim/bundle
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
