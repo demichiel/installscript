@@ -7,6 +7,7 @@ echo "installed node npm zsh vim curl wget git unzip fonts-powerline mosh"
 echo "set git config"
 git config user.name "Michiel R"
 git config user.email "demichiel@gmail.com"
+sudo chown -R $(whoami) ~/.config
 echo "git configured"
 
 echo "installing pathogen"
