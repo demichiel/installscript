@@ -11,6 +11,8 @@ sed -i 's/robbyrussell/agnoster/g' ~/.zshrc
 sed -i 's/\(git\)/git\ ubuntu/g' ~/.zshrc
 echo "Edited .zshrc"
 
+echo "installing tldr"
 sudo npm install -g tldr
 
+echo "restart zsh"
 zsh
