@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "Installing programs"
-sudo apt-get install zsh vim curl wget git unzip
+sudo apt-get install zsh vim curl wget git unzip powerline-fonts
 
 mkdir -p ~/.vim/autoload ~/.vim/bundle
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
@@ -18,4 +18,4 @@ rm -rf ~/source-code-pro-2.030R-ro-1.050R-it
 
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-
+sudo snap install node --classic --channel=11
