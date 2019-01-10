@@ -1,7 +1,7 @@
 #!/bin/bash
 echo "Installing programs"
-sudo apt-get install -y zsh vim curl wget git unzip fonts-powerline mosh
-sudo snap install node --classic --channel=11
+curl -sL https://deb.nodesource.com/setup_11.x | sudo -E bash -
+sudo apt-get install -y zsh vim curl wget git unzip fonts-powerline mosh nodejs
 echo "installed node npm zsh vim curl wget git unzip fonts-powerline mosh"
 
 echo "set git config"
