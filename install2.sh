@@ -4,6 +4,7 @@ then
 	echo 'execute pathogen#infect()' >> ~/.vimrc
 	echo 'syntax on' >> ~/.vimrc
 	echo 'filetype plugin indent on' >> ~/.vimrc
+	echo 'set pastetoggle=<F2>' >> ~/.vimrc
 	echo 'Created .vimrc'
 fi
 
