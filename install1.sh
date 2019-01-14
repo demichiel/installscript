@@ -1,8 +1,8 @@
 #!/bin/bash
 echo "Installing programs"
 curl -sL https://deb.nodesource.com/setup_11.x | sudo -E bash -
-sudo apt-get install -y zsh vim curl wget git unzip fonts-powerline mosh nodejs locate
-echo "installed node npm zsh vim curl wget git unzip fonts-powerline mosh locate"
+sudo apt-get install -y zsh vim curl wget git unzip fonts-powerline mosh nodejs locate grc
+echo "installed node npm zsh vim curl wget git unzip fonts-powerline mosh locate grc"
 
 echo "set git config"
 git config user.name "Michiel R"

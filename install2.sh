@@ -9,6 +9,7 @@ fi
 
 sed -i 's/robbyrussell/agnoster/g' ~/.zshrc
 sed -i 's/\(git\)/git\ ubuntu/g' ~/.zshrc
+echo '[[ -s "/etc/grc.zsh" ]] && source /etc/grc.zsh' >> ~/.zshrc
 echo "Edited .zshrc"
 
 echo "installing tldr"
