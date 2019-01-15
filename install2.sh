@@ -1,4 +1,5 @@
 echo 'installing k'
+sudo chown -R $(whoami) ~/.oh-my-zsh/
 git clone https://github.com/supercrabtree/k $ZSH_CUSTOM/plugins/k
 
 if [ ! -f ~/.vimrc ]
