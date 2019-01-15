@@ -1,3 +1,6 @@
+echo 'installing k'
+git clone https://github.com/supercrabtree/k $ZSH_CUSTOM/plugins/k
+
 if [ ! -f ~/.vimrc ]
 then
 	touch .vimrc
@@ -9,7 +12,7 @@ then
 fi
 
 sed -i 's/robbyrussell/agnoster/g' ~/.zshrc
-sed -i 's/\(git\)/git\ ubuntu/g' ~/.zshrc
+sed -i 's/\(git\)/git\ ubuntu\ k/g' ~/.zshrc
 echo '[[ -s "/etc/grc.zsh" ]] && source /etc/grc.zsh' >> ~/.zshrc
 echo "Edited .zshrc"
 
