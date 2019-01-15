@@ -13,11 +13,6 @@ sed -i 's/\(git\)/git\ ubuntu/g' ~/.zshrc
 echo '[[ -s "/etc/grc.zsh" ]] && source /etc/grc.zsh' >> ~/.zshrc
 echo "Edited .zshrc"
 
-echo 'install k'
-git clone https://github.com/supercrabtree/k $HOME/k
-source $HOME/k/k.sh
-print "source $HOME/k/k.sh" >> $HOME/.zshrc
-
 echo "installing tldr"
 sudo npm install -g tldr
 
