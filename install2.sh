@@ -1,7 +1,3 @@
-echo 'installing k'
-sudo chown -R $(whoami) ~/.oh-my-zsh/
-git clone https://github.com/supercrabtree/k $ZSH_CUSTOM/plugins/k
-
 if [ ! -f ~/.vimrc ]
 then
 	touch .vimrc
@@ -13,9 +9,14 @@ then
 fi
 
 sed -i 's/robbyrussell/agnoster/g' ~/.zshrc
-sed -i 's/\(git\)/git\ ubuntu\ k/g' ~/.zshrc
+sed -i 's/\(git\)/git\ ubuntu/g' ~/.zshrc
 echo '[[ -s "/etc/grc.zsh" ]] && source /etc/grc.zsh' >> ~/.zshrc
 echo "Edited .zshrc"
+
+echo 'install k'
+git clone https://github.com/supercrabtree/k $HOME/k
+source $HOME/k/k.sh
+print "source $HOME/k/k.sh" >> $HOME/.zshrc
 
 echo "installing tldr"
 sudo npm install -g tldr
