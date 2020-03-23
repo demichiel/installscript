@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "Installing programs"
-curl -sL https://deb.nodesource.com/setup_11.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_13.x | sudo -E bash -
 sudo apt-get install -y zsh vim curl wget git unzip fonts-powerline mosh nodejs locate fonts-firacode
 echo "installed node npm zsh vim curl wget git unzip fonts-powerline mosh locate fonts-firacode grc"
 
